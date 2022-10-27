@@ -121,13 +121,16 @@
   /* mobile menu */
   .mobile-menu {
     position: absolute;
+    width: 80%;
     top: 60px;
     left: 0;
     padding: 24px;
     background-color: var(--white);
     border-right: 1px solid var(--very-light-pink);
+    border-top: 1px solid var(--very-light-pink) ;
     border-bottom: 1px solid var(--very-light-pink);
     border-radius: 0px 0px 16px 0px ;
+    box-shadow: 1px 1px 1px 1px whitesmoke;
   }
   .mobile-menu a {
     text-decoration: none;
