@@ -20,10 +20,10 @@ function toggleDesktopMenu(){
 }
 function toggleMobileMenu (){
     const isOrderDetailClosed = orderDetail.classList.contains('inactive');
-
     if (!isOrderDetailClosed){
         orderDetail.classList.add('inactive')
     }
+
     mobileMenu.classList.toggle('inactive');
 }
 function toggleShoppingCart() {
