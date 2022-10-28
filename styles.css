@@ -357,8 +357,12 @@
     .desktop-menu {
       display: none;
     }
-    .product-detail {
+    .product-detail-info{
       width: 100%;
+    }
+    .product-detail-info img:nth-child(2) {
+      border-radius: 0px;
+      object-fit:fill;
     }
     .cards-container {
       grid-template-columns: repeat(auto-fill, 140px);
