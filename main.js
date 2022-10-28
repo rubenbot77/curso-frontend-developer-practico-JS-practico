@@ -7,11 +7,14 @@ const orderDetail = document.querySelector('.product-detail')
 const productDetailAside = document.querySelector('.product-detail-info')
 const productInfoClose = document.querySelector('.product-detail-close')
 const cardsContainer = document.querySelector('.cards-container')
+const darkMode = document.querySelector('.darken')
+
+
 
 navEmail.addEventListener('click', toggleDesktopMenu);
 menuHamIcon.addEventListener('click', toggleMobileMenu);
 menuCar.addEventListener('click', toggleShoppingCart);
-productInfoClose.addEventListener('click', closeDetailInfo);
+productInfoClose.addEventListener('click', closeDetailInfo,);
 
 function toggleDesktopMenu(){
     const isOrderDetailClosed = orderDetail.classList.contains('inactive');
@@ -57,16 +60,22 @@ function toggleShoppingCart() {
 function openProductDetailAside(){
     const isDesktopMenuClosed = desktopMenu.classList.contains('inactive');
     const ismobileMenuClosed = mobileMenu.classList.contains('inactive');
+
+
     if (!isDesktopMenuClosed){
         desktopMenu.classList.add('inactive')
     }
     if (!ismobileMenuClosed){
         mobileMenu.classList.add('inactive')
     }
+
     productDetailAside.classList.remove('inactive')
+    darkMode.classList.remove('inactive')
 }
+
 function closeDetailInfo(){
     productDetailAside.classList.add('inactive');
+    darkMode.classList.add('inactive')
 }
 const productList = [];
 productList.push({
